@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="362dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@android:color/black"
+        android:backgroundTint="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="362dp"
+        android:layout_height="490dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@android:color/black"
+        android:backgroundTint="@android:color/holo_green_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"></androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="362dp"
+        android:layout_height="480dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@android:color/black"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="FULL INJECTION PUMP-4CTI 87 KW"
+            android:textColor="@android:color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="10dp"
+            android:text="BACK"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="34dp"
+            android:background="@android:color/darker_gray"
+            android:backgroundTint="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="38dp"
+            android:text="Unit Price: $ 1500"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="70dp"
+            android:text="AVAILABLE STOCK"
+            android:textColor="@android:color/black"
+            android:textSize="16dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="150dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TableRow
+                android:background="#DAE8FC"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Warehouse North" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Warehouse South" />
+            </TableRow>
+
+            <TableRow
+                android:background="#DAE8FC"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Warehouse East" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Warehouse West" />
+            </TableRow>
+
+            <TableRow
+                android:background="#DAE8FC"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Warehouse North East" />
+            </TableRow>
+        </TableLayout>
+        <!--        <TableLayout-->
+        <!--            android:id="@+id/simpleTableLayout"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:stretchColumns="1"> &lt;!&ndash; stretch the second column of the layout&ndash;&gt;-->
+
+        <!--            &lt;!&ndash; first row of the table layout&ndash;&gt;-->
+        <!--            <TableRow-->
+
+        <!--                android:id="@+id/firstRow"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginRight="10dp"-->
+        <!--                android:layout_marginLeft="10dp"-->
+        <!--                android:background="@android:color/black"-->
+        <!--                android:layout_marginTop="110dp">-->
+
+        <!--                &lt;!&ndash; first element of the row&ndash;&gt;-->
+        <!--                <TextView-->
+
+        <!--                    android:id="@+id/simpleTextView9"-->
+        <!--                    android:layout_width="170dp"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:background="@android:color/black"-->
+        <!--                    android:padding="18dip"-->
+        <!--                    android:text="Text 1"-->
+        <!--                    android:backgroundTint="@android:color/white"-->
+        <!--                    android:textColor="#000"-->
+        <!--                    android:textSize="12dp" />-->
+
+        <!--                <TextView-->
+
+        <!--                    android:id="@+id/simpleTextView10"-->
+        <!--                    android:layout_width="150dp"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:background="#FF0000"-->
+        <!--                    android:padding="18dip"-->
+        <!--                    android:text="Text 2"-->
+        <!--                    android:backgroundTint="@android:color/white"-->
+        <!--                    android:textColor="#000"-->
+        <!--                    android:textSize="14dp" />-->
+
+        <!--            </TableRow>-->
+
+        <!--            <TableRow-->
+
+        <!--                android:id="@+id/firstRow1"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginRight="10dp"-->
+        <!--                android:layout_marginLeft="10dp"-->
+        <!--                android:background="@android:color/black"-->
+        <!--                android:layout_marginTop="1.5dp">-->
+
+        <!--                &lt;!&ndash; first element of the row&ndash;&gt;-->
+        <!--                <TextView-->
+
+        <!--                    android:id="@+id/simpleTextView11"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:background="#b0b0b0"-->
+        <!--                    android:padding="18dip"-->
+        <!--                    android:text="Text 1"-->
+        <!--                    android:backgroundTint="@android:color/white"-->
+        <!--                    android:textColor="#000"-->
+        <!--                    android:textSize="12dp" />-->
+
+        <!--                <TextView-->
+
+        <!--                    android:id="@+id/simpleTextView12"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:background="#FF0000"-->
+        <!--                    android:padding="18dip"-->
+        <!--                    android:text="Text 2"-->
+        <!--                    android:backgroundTint="@android:color/white"-->
+        <!--                    android:textColor="#000"-->
+        <!--                    android:textSize="14dp" />-->
+
+        <!--            </TableRow>-->
+
+
+        <!--            <TableRow-->
+
+        <!--                android:id="@+id/firstRow2"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginRight="10dp"-->
+        <!--                android:layout_marginLeft="10dp"-->
+        <!--                android:background="@android:color/black"-->
+        <!--                android:layout_marginTop="1.5dp">-->
+
+        <!--                &lt;!&ndash; first element of the row&ndash;&gt;-->
+        <!--                <TextView-->
+
+        <!--                    android:id="@+id/simpleTextView13"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:background="#b0b0b0"-->
+        <!--                    android:padding="18dip"-->
+        <!--                    android:text="Text 1"-->
+        <!--                    android:backgroundTint="@android:color/white"-->
+        <!--                    android:textColor="#000"-->
+        <!--                    android:textSize="12dp" />-->
+
+        <!--                <TextView-->
+        <!--                    android:id="@+id/simpleTextView14"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:background="#FF0000"-->
+        <!--                    android:padding="18dip"-->
+        <!--                    android:text="Text 2"-->
+        <!--                    android:backgroundTint="@android:color/white"-->
+        <!--                    android:textColor="#000"-->
+        <!--                    android:textSize="14dp" />-->
+
+        <!--            </TableRow>-->
+        <!--        </TableLayout>-->
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="300dp"
+            android:text="Quantity"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="17dp" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="350dp"
+            android:background="@android:color/white"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_minusfloatbutton" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="350dp"
+            android:gravity="center_horizontal"
+            android:text="02"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="350dp"
+            android:background="@android:color/white"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_addfloatbutton" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="440dp"
+            android:text="Total Price: $ 3000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="420dp"
+            android:background="@android:color/holo_orange_dark"
+            android:text="ADD"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="410dp"
+            android:background="@android:color/darker_gray"
+            android:backgroundTint="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:backgroundTint="@android:color/white"
+        android:src="@drawable/ic_contact_mail_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
